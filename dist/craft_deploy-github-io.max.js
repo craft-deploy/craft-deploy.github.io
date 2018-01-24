@@ -28842,7 +28842,7 @@ var AppContainer = _styledComponents2.default.div(_templateObject);
 
 var ContentContainer = _styledComponents2.default.div(_templateObject2, _responsive.Phone, _responsive.Tablet, _responsive.Laptop, _responsive.Desktop);
 
-var create = function create(TopNav, Playground) {
+var create = function create(TopNav, Content) {
   return function (_Component) {
     _inherits(MainLayout, _Component);
 
@@ -28856,7 +28856,11 @@ var create = function create(TopNav, Playground) {
       key: 'render',
       value: function render() {
 
-        var playground = _react2.default.createElement(Playground, null);
+        var content = _react2.default.createElement(
+          Content,
+          null,
+          'Under Construction'
+        );
 
         return _react2.default.createElement(
           AppContainer,
@@ -28865,7 +28869,7 @@ var create = function create(TopNav, Playground) {
           _react2.default.createElement(
             ContentContainer,
             null,
-            playground
+            content
           )
         );
       }
@@ -28930,7 +28934,7 @@ var create = function create() {
           null,
           _react2.default.createElement(
             'div',
-            { id: 'header' },
+            { id: 'craft_deploy_header' },
             '>Craft|Deploy_'
           )
         );
@@ -28956,6 +28960,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
 var _craft_deploy_topnav = require('./component/craft_deploy/craft_deploy_topnav');
 
 var _craft_deploy_topnav2 = _interopRequireDefault(_craft_deploy_topnav);
@@ -28968,11 +28976,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Content = styled.div(_templateObject);
+var Content = _styledComponents2.default.div(_templateObject);
 
 (function (global) {
   var TopNav = (0, _craft_deploy_topnav2.default)();
-  var MainLayout = (0, _craft_deploy_main2.default)(TopNav);
+  var MainLayout = (0, _craft_deploy_main2.default)(TopNav, Content);
 
   var container = global.document.createElement('div');
   global.document.body.appendChild(container);
@@ -28984,7 +28992,7 @@ var Content = styled.div(_templateObject);
   render();
 })(window);
 
-},{"./component/craft_deploy/craft_deploy_main":275,"./component/craft_deploy/craft_deploy_topnav":276,"react":192,"react-dom":2}],278:[function(require,module,exports){
+},{"./component/craft_deploy/craft_deploy_main":275,"./component/craft_deploy/craft_deploy_topnav":276,"react":192,"react-dom":2,"styled-components":198}],278:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

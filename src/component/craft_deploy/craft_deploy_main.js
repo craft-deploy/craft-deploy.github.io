@@ -25,16 +25,16 @@ const ContentContainer = styled.div`
   }
 `;
 
-const create = (TopNav, Playground) => class MainLayout extends Component {
+const create = (TopNav, Content) => class MainLayout extends Component {
   render() {
 
-    const playground = <Playground />
+    const content = <Content>Under Construction</Content>
 
     return (
     <AppContainer>
       <TopNav />
       <ContentContainer>
-        {playground}
+        {content}
       </ContentContainer>
     </AppContainer>
   );

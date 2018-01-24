@@ -16,7 +16,7 @@ const create = () => class TopNav extends Component {
   render() {
     return (
       <Container>
-        <div id="header">>Craft|Deploy_</div>
+        <div id="craft_deploy_header">>Craft|Deploy_</div>
       </Container>
     );
   }
