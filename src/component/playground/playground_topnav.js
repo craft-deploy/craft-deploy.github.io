@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Apricot, LightAzure } from '../style/color';
-import { PtSans } from '../style/font';
+import { Apricot, LightAzure } from '../../style/color';
+import { PtSans } from '../../style/font';
 
 const Container = styled.div`
   margin: none;

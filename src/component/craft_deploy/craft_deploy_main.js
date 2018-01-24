@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Phone, Tablet, Laptop, Desktop } from '../style/responsive';
+import { Phone, Tablet, Laptop, Desktop } from '../../style/responsive';
 
 const AppContainer = styled.div`  
   background-color: rgb(54, 54, 54);

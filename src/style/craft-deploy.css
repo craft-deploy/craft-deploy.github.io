@@ -1,0 +1,13 @@
+@font-face {
+    font-family: CraftDeployFont;
+    src: url(NotCourierSans.otf);
+}
+
+@font-face {
+    font-family: CraftDeployFontBold;
+    src: url(NotCourierSans-Bold.otf);
+}
+
+body {
+    font-family: CraftDeployFont;
+}

@@ -1,14 +1,21 @@
 import React             from 'react';
 import ReactDOM          from 'react-dom';
 
-import createPlayground  from './component/playground/playground';
-import createTopNav      from './component/top-nav';
-import createMainLayout  from './component/main-layout';
+import createTopNav      from './component/craft_deploy/craft_deploy_topnav';
+import createMainLayout  from './component/craft_deploy/craft_deploy_main';
+
+const Content = styled.div`
+  margin: none;
+  height: 5em;
+  background-color: #FFF;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  `;
 
 ((global) => {
-  const Playground = createPlayground();
   const TopNav     = createTopNav();
-  const MainLayout = createMainLayout(TopNav, Playground);
+  const MainLayout = createMainLayout(TopNav);
 
   const container = global.document.createElement('div');
   global.document.body.appendChild(container);
