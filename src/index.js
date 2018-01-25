@@ -8,10 +8,8 @@ import createMainLayout  from './component/craft_deploy/craft_deploy_main';
 const Content = styled.div`
   margin: none;
   height: 5em;
-  background-color: #FFF;
   width: 100%;
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
   `;
 
 ((global) => {

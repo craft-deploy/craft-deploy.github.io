@@ -1,0 +1,55 @@
+$very_light_blue: #aacde9
+$light_blue:      #6a9dc4
+$mid_blue:        #41719c
+$dark_blue:       #323e4f
+$dark_orange:     #843c0c
+$light_apricot:   #f7caac
+$dark_apricot:    #f4b083
+$light_green:     #a9d18e
+$transparent:     #ffffff00
+
+@font-face
+    font-family: "CraftDeployFont"
+    src: url(NotCourierSans.otf)
+
+
+@font-face
+    font-family: "CraftDeployFontBold"
+    src: url(NotCourierSans-Bold.otf)
+
+
+body 
+    font-family: CraftDeployFont
+    color: $very_light_blue
+    background-color: $dark_blue
+
+.spacer
+    display:    block
+    width:      95%
+    height:     1px
+    margin:     0.5em
+    background: linear-gradient(to right, $very_light_blue, $very_light_blue, $very_light_blue, $transparent, $transparent)
+
+.dark_blue_text 
+    color: $dark_blue
+
+
+.dark_orange_text 
+    color: $dark_orange
+
+
+.dark_apricot_text
+    color: $dark_apricot
+
+
+.light_apricot_text 
+    color: $light_apricot
+
+.light_green_text
+    color: $light_green
+
+.notification 
+    font-size: 1.5em
+
+#craft_deploy_header 
+    font-size: 4em

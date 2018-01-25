@@ -28815,7 +28815,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['  \n  background-color: rgb(54, 54, 54);\n'], ['  \n  background-color: rgb(54, 54, 54);\n']),
+var _templateObject = _taggedTemplateLiteral(['  \n'], ['  \n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  margin: 0 auto;\n  padding: 0;\n  \n  @media ', ' {\n    margin-left: 0.5em;\n    margin-right: 0.5em;\n  }\n  @media ', ' {\n    width: 95%;\n  }\n  @media ', ' {\n    width: 95%;\n  }\n  @media ', ' {\n    width: 95%;\n  }\n'], ['\n  margin: 0 auto;\n  padding: 0;\n  \n  @media ', ' {\n    margin-left: 0.5em;\n    margin-right: 0.5em;\n  }\n  @media ', ' {\n    width: 95%;\n  }\n  @media ', ' {\n    width: 95%;\n  }\n  @media ', ' {\n    width: 95%;\n  }\n']);
 
 var _react = require('react');
@@ -28858,7 +28858,7 @@ var create = function create(TopNav, Content) {
 
         var content = _react2.default.createElement(
           Content,
-          null,
+          { className: 'notification' },
           'Under Construction'
         );
 
@@ -28890,7 +28890,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  margin: none;\n  height: 5em;\n  background-color: #FFF;\n  width: 100%;\n  padding-bottom: 20px;\n  border-bottom: 1px solid black;\n'], ['\n  margin: none;\n  height: 5em;\n  background-color: #FFF;\n  width: 100%;\n  padding-bottom: 20px;\n  border-bottom: 1px solid black;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  margin: none;\n  height: 5em;\n  width: 100%;\n  padding-bottom: 20px;\n'], ['\n  margin: none;\n  height: 5em;\n  width: 100%;\n  padding-bottom: 20px;\n']);
 
 var _react = require('react');
 
@@ -28935,8 +28935,28 @@ var create = function create() {
           _react2.default.createElement(
             'div',
             { id: 'craft_deploy_header' },
-            '>Craft|Deploy_'
-          )
+            _react2.default.createElement(
+              'span',
+              { className: 'dark_orange_text' },
+              '>'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'dark_apricot_text' },
+              'Craft'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'light_apricot_text' },
+              '|Deploy'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'light_green_text' },
+              '_'
+            )
+          ),
+          _react2.default.createElement('div', { className: 'spacer' })
         );
       }
     }]);
@@ -28950,7 +28970,7 @@ exports.default = create;
 },{"../../style/color":278,"../../style/font":279,"react":192,"styled-components":198}],277:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['\n  margin: none;\n  height: 5em;\n  background-color: #FFF;\n  width: 100%;\n  padding-bottom: 20px;\n  border-bottom: 1px solid black;\n  '], ['\n  margin: none;\n  height: 5em;\n  background-color: #FFF;\n  width: 100%;\n  padding-bottom: 20px;\n  border-bottom: 1px solid black;\n  ']);
+var _templateObject = _taggedTemplateLiteral(['\n  margin: none;\n  height: 5em;\n  width: 100%;\n  padding-bottom: 20px;\n  '], ['\n  margin: none;\n  height: 5em;\n  width: 100%;\n  padding-bottom: 20px;\n  ']);
 
 var _react = require('react');
 

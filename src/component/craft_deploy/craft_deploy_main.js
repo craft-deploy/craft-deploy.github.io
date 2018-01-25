@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Phone, Tablet, Laptop, Desktop } from '../../style/responsive';
 
 const AppContainer = styled.div`  
-  background-color: rgb(54, 54, 54);
 `;
 
 const ContentContainer = styled.div`
@@ -28,7 +27,7 @@ const ContentContainer = styled.div`
 const create = (TopNav, Content) => class MainLayout extends Component {
   render() {
 
-    const content = <Content>Under Construction</Content>
+    const content = <Content className="notification">Under Construction</Content>
 
     return (
     <AppContainer>

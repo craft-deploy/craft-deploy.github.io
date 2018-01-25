@@ -1,17 +1,40 @@
 @font-face {
-    font-family: CraftDeployFont;
-    src: url(NotCourierSans.otf);
-}
-
+  font-family: "CraftDeployFont";
+  src: url(NotCourierSans.otf); }
 @font-face {
-    font-family: CraftDeployFontBold;
-    src: url(NotCourierSans-Bold.otf);
-}
-
+  font-family: "CraftDeployFontBold";
+  src: url(NotCourierSans-Bold.otf); }
 body {
-    font-family: CraftDeployFont;
-}
+  font-family: CraftDeployFont;
+  color: #aacde9;
+  background-color: #323e4f; }
 
-#craft_deploy_header { 
-    font-size: 4em;
-}
+.spacer {
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: 0.5em;
+  background: linear-gradient(to right, #aacde9, #aacde9, #aacde9, #ffffff00, #ffffff00); }
+
+.dark_blue_text {
+  color: #323e4f; }
+
+.dark_orange_text {
+  color: #843c0c; }
+
+.dark_apricot_text {
+  color: #f4b083; }
+
+.light_apricot_text {
+  color: #f7caac; }
+
+.light_green_text {
+  color: #a9d18e; }
+
+.notification {
+  font-size: 1.5em; }
+
+#craft_deploy_header {
+  font-size: 4em; }
+
+/*# sourceMappingURL=craft-deploy.css.map */

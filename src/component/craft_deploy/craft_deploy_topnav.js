@@ -6,17 +6,21 @@ import { PtSans } from '../../style/font';
 const Container = styled.div`
   margin: none;
   height: 5em;
-  background-color: #FFF;
   width: 100%;
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
 `;
 
 const create = () => class TopNav extends Component {
   render() {
     return (
       <Container>
-        <div id="craft_deploy_header">>Craft|Deploy_</div>
+        <div id="craft_deploy_header">
+          <span className="dark_orange_text">></span>
+          <span className="dark_apricot_text">Craft</span>
+          <span className="light_apricot_text">|Deploy</span>
+          <span className="light_green_text">_</span>
+        </div>
+        <div className="spacer" />
       </Container>
     );
   }
